@@ -1,6 +1,13 @@
+import '../styles/styles.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../styles/styles.scss';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import App from './modules/App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+
+  document.getElementById('root')
+);
